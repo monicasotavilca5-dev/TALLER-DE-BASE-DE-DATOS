@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS cine_online CHARACTER SET utf8mb4 COLLATE utf8mb4_
 USE cine_online;
 
 SET FOREIGN_KEY_CHECKS = 0;
-DROP TABLE IF EXISTS Resenas;
+DROP TABLE IF EXISTS Reseñas;
 DROP TABLE IF EXISTS Boletos;
 DROP TABLE IF EXISTS Salas;
 DROP TABLE IF EXISTS Peliculas;
@@ -56,4 +56,4 @@ CREATE TABLE Reseñas (
     CONSTRAINT fk_res_pelicula FOREIGN KEY (pelicula_id) REFERENCES Peliculas(pelicula_id)
 ) ENGINE=InnoDB;
 CREATE INDEX idx_boletos_cliente ON Boletos(cliente_id);
-CREATE INDEX idx_resenas_pelicula ON Resenas(pelicula_id);
+CREATE INDEX idx_reseñas_pelicula ON Reseñas(pelicula_id);
