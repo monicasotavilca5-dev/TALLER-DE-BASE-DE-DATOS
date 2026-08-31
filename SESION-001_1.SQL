@@ -45,7 +45,7 @@ CREATE TABLE Boletos (
     CONSTRAINT fk_bol_sala FOREIGN KEY (sala_id) REFERENCES Salas(sala_id)
 ) ENGINE=InnoDB;
 
-CREATE TABLE Resenas (
+CREATE TABLE Reseñas (
     resena_id       INT AUTO_INCREMENT PRIMARY KEY,
     cliente_id      INT NOT NULL,
     pelicula_id     INT NOT NULL,
